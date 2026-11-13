@@ -1,4 +1,4 @@
-﻿# Two Moons · Sıfırdan Regresyon Karşılaştırması
+# Two Moons · Sıfırdan Regresyon Karşılaştırması
 
 **NumPy ile doğrusal ve lojistik regresyon: aynı veri, aynı test kümesi, farklı kayıp fonksiyonları.**
 
@@ -155,7 +155,7 @@ $$
 Analitik gradyanlar:
 
 $$
-\nabla_{\theta}J = \frac{X^T(\hat{y} - y)}{m}, \qquad \frac{\partial J}{\partial b} = \operatorname{mean}(\hat{y} - y)
+\nabla_{\theta}J = \frac{X^T(\hat{y} - y)}{m}, \qquad \frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(\hat{y}^{(i)} - y^{(i)})
 $$
 
 Ham tahminler `0.5` eşiğiyle sınıfa dönüştürülür. Doğrusal regresyon çıktısı olasılık değildir ve `[0, 1]` aralığının dışında olabilir.
@@ -171,7 +171,7 @@ $$
 Amaç fonksiyonu **Binary Cross-Entropy (BCE)**'dir. Uygulamada sayısal kararlılık için eşdeğer `logaddexp` ifadesi kullanılır.
 
 $$
-\nabla_{\theta}J = \frac{X^T(p - y)}{m}, \qquad \frac{\partial J}{\partial b} = \operatorname{mean}(p - y)
+\nabla_{\theta}J = \frac{X^T(p - y)}{m}, \qquad \frac{\partial J}{\partial b} = \frac{1}{m}\sum_{i=1}^{m}(p^{(i)} - y^{(i)})
 $$
 
 Her iki modelde de parametreler Batch Gradient Descent ile güncellenir:
