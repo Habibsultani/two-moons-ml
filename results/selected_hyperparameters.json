@@ -1,0 +1,26 @@
+{
+  "Doğrusal / Özgün": {
+    "learning_rate": 0.01,
+    "epochs": 1000,
+    "validation_f1": 0.7555555555555555,
+    "validation_accuracy": 0.7708333333333334
+  },
+  "Lojistik / Özgün": {
+    "learning_rate": 0.01,
+    "epochs": 1000,
+    "validation_f1": 0.7555555555555555,
+    "validation_accuracy": 0.7708333333333334
+  },
+  "Doğrusal / Polinom": {
+    "learning_rate": 0.01,
+    "epochs": 1000,
+    "validation_f1": 0.7391304347826086,
+    "validation_accuracy": 0.75
+  },
+  "Lojistik / Polinom": {
+    "learning_rate": 0.01,
+    "epochs": 1000,
+    "validation_f1": 0.7555555555555555,
+    "validation_accuracy": 0.7708333333333334
+  }
+}

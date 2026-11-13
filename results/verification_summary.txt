@@ -1,0 +1,3 @@
+BAŞARILI: Veri SHA256=04fceb794a017d73379c92083557ea97f3cbec6251d7fe06202b3b0ce3af91d3.
+Dört modelin aynı 60 test satırı, eğitimden öğrenilen ölçekler, doğrulama seçimi, bağımsız metrikler, kayıp kayıtları, parametrelerden test tahminleri ve karar ızgarası doğrulandı.
+12 PNG dosyası okunabilir ve boş değil; geometri tanığı da kontrol edildi.
